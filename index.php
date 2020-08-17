@@ -17,6 +17,9 @@
 include('includes/service.php');
 // end service section
 
+// projects service 
+include('includes/projects.php');
+// end projects service 
 
 // footer 
  include('includes/footer.php'); 

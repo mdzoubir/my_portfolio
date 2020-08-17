@@ -1,4 +1,17 @@
 /*  service section   */
+@mixin section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+    span{
+        color: crimson;
+    }
+}
+
 img{
     height: 100%;
     width: 100%;
@@ -12,9 +25,7 @@ p{
     letter-spacing: .05rem;
     color: black;
 }
-p{
-    
-}
+
 #services{
     .services{
         flex-direction: column;
@@ -22,19 +33,9 @@ p{
         max-width: 1500px;
         margin: 0 auto;
         padding: 100px 0;
-        .service-top{
-            
+        .service-top{ 
             .section-title{
-                font-size: 4rem;
-                font-weight: 300;
-                color: black;
-                margin-bottom: 10px;
-                text-transform: uppercase;
-                letter-spacing: .2rem;
-                text-align: center;
-                span{
-                    color: crimson;
-                }
+                @include section-title;
             }
         }
         .service-bottom{
