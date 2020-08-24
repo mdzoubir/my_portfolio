@@ -450,3 +450,22 @@ p {
         font-size: 3rem;
         text-transform: uppercase;
         color: white; }
+    #footer .footer h2 {
+      color: white;
+      font-weight: 500;
+      font-size: 1.8rem;
+      letter-spacing: .1rem;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    #footer .footer .social-icon {
+      display: flex;
+      margin-bottom: 30px; }
+      #footer .footer .social-icon .social-item {
+        height: 50px;
+        width: 50px;
+        margin: 0 5px; }
+        #footer .footer .social-icon .social-item img {
+          filter: grayscale(1);
+          transition: .3s ease filter; }
+        #footer .footer .social-icon .social-item:hover img {
+          filter: grayscale(0); }
