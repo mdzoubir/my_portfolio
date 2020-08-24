@@ -9,6 +9,9 @@
     span{
         color: crimson;
     }
+    @include resp(768px){
+        font-size: 6rem;
+    }
 }
 
 @mixin botton {
@@ -28,3 +31,12 @@
             background-color: crimson;
         }
 }
+
+// media query foe tablet and desktop
+@mixin resp($size) {
+    @media (min-width: #{$size}) {
+        @content;
+    }
+}
+
+

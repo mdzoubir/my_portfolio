@@ -6,6 +6,9 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 20px;
+    @include resp(768px){
+        flex-direction: row;
+    }
     .col-left{
         width: 250px;
         height: 360px;
@@ -24,14 +27,30 @@
                 width: 98%;
                 border: 7px solid crimson;
                 z-index: -1;
+                @include resp(768px){
+                    left: -45px;
+                    top: 30px;
+                    height: 98%;
+                    width: 98%;
+                    border: 8px solid crimson;
+                }
             }
         }
 
     }
     .col-right{
         width: 100%;
+        @include resp(768px){
+            text-align: left;
+            padding: 30px;
+        }
         .section-title{
             @include section-title;
+        }
+        h1{
+            @include resp(768px){
+                text-align: left;
+            }
         }
         h2{
             font-size: 1.8rem;

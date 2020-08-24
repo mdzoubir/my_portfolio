@@ -1,3 +1,56 @@
+#header {
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto; }
+  #header .header {
+    min-height: 8vh;
+    background-color: rgba(31, 30, 30, 0.24); }
+    #header .header .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      max-width: 1300px;
+      padding: 0 10px; }
+      #header .header .nav-bar ul {
+        list-style: none;
+        position: absolute;
+        background-color: #1f1e1e;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        overflow-x: hidden; }
+        #header .header .nav-bar ul a {
+          font-size: 2.5rem;
+          font-weight: 500;
+          letter-spacing: .2rem;
+          text-decoration: none;
+          color: white;
+          text-transform: uppercase;
+          padding: 20px;
+          display: block; }
+          #header .header .nav-bar ul a::after {
+            content: 'TEXT';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            color: rgba(240, 248, 255, 0.021);
+            font-size: 15rem;
+            letter-spacing: 50px;
+            z-index: -1; }
+        #header .header .nav-bar ul li:hover a::after {
+          transform: translate(-50%, -50%) scale(1); }
 
 * {
   padding: 0;
@@ -48,6 +101,9 @@ a {
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: 1s; }
+    @media (min-width: 768px) {
+      #hero h1 {
+        font-size: 6rem; } }
     #hero h1:nth-child(1) {
       animation-delay: 1s; }
       #hero h1:nth-child(1) span {
@@ -84,6 +140,10 @@ a {
     #hero .cta:hover {
       color: white;
       background-color: crimson; }
+    @media (min-width: 768px) {
+      #hero .cta {
+        font-size: 2.5rem;
+        padding: 20px 60px; } }
 
 /*  end hero section    */
 /* keyframes */
@@ -131,6 +191,13 @@ p {
     text-align: center; }
     #services .services .service-top .section-title span {
       color: crimson; }
+    @media (min-width: 768px) {
+      #services .services .service-top .section-title {
+        font-size: 6rem; } }
+  @media (min-width: 768px) {
+    #services .services .service-top {
+      width: 500px;
+      margin: 0 auto; } }
   #services .services .service-bottom {
     display: flex;
     align-items: center;
@@ -151,6 +218,14 @@ p {
       position: relative;
       z-index: 1;
       overflow: hidden; }
+      @media (min-width: 768px) {
+        #services .services .service-bottom .service-item {
+          flex-basis: 45%;
+          margin: 2.5%; } }
+      @media (min-width: 1200px) {
+        #services .services .service-bottom .service-item {
+          flex-basis: 22%;
+          margin: 1.5%; } }
       #services .services .service-bottom .service-item::after {
         content: '';
         position: absolute;
@@ -159,7 +234,7 @@ p {
         height: 100%;
         width: 100%;
         background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-        opacity: .8;
+        opacity: .9;
         z-index: -1; }
       #services .services .service-bottom .service-item .icon {
         height: 80px;
@@ -206,6 +281,13 @@ p {
     text-align: center; }
     #services .services .service-top .section-title span {
       color: crimson; }
+    @media (min-width: 768px) {
+      #services .services .service-top .section-title {
+        font-size: 6rem; } }
+  @media (min-width: 768px) {
+    #services .services .service-top {
+      width: 500px;
+      margin: 0 auto; } }
   #services .services .service-bottom {
     display: flex;
     align-items: center;
@@ -226,6 +308,14 @@ p {
       position: relative;
       z-index: 1;
       overflow: hidden; }
+      @media (min-width: 768px) {
+        #services .services .service-bottom .service-item {
+          flex-basis: 45%;
+          margin: 2.5%; } }
+      @media (min-width: 1200px) {
+        #services .services .service-bottom .service-item {
+          flex-basis: 22%;
+          margin: 1.5%; } }
       #services .services .service-bottom .service-item::after {
         content: '';
         position: absolute;
@@ -234,7 +324,7 @@ p {
         height: 100%;
         width: 100%;
         background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-        opacity: .8;
+        opacity: .9;
         z-index: -1; }
       #services .services .service-bottom .service-item .icon {
         height: 80px;
@@ -273,6 +363,16 @@ p {
       margin: 20px auto;
       overflow: hidden;
       border-radius: 10px; }
+      @media (min-width: 768px) {
+        #projects .projects .all-projects .project-item:nth-child(even) {
+          flex-direction: row-reverse; } }
+      @media (min-width: 768px) {
+        #projects .projects .all-projects .project-item {
+          flex-direction: row;
+          height: 400px;
+          margin: 0;
+          width: 100%;
+          border-radius: 0; } }
       #projects .projects .all-projects .project-item:hover .project-img img {
         width: 150%; }
       #projects .projects .all-projects .project-item .project-info {
@@ -285,6 +385,9 @@ p {
         flex-direction: column;
         background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
         color: white; }
+        @media (min-width: 768px) {
+          #projects .projects .all-projects .project-item .project-info {
+            height: 100%; } }
         #projects .projects .all-projects .project-item .project-info h1 {
           font-size: 4rem;
           font-weight: 500; }
@@ -299,6 +402,9 @@ p {
         height: 300px;
         overflow: hidden;
         position: relative; }
+        @media (min-width: 768px) {
+          #projects .projects .all-projects .project-item .project-img {
+            height: 100%; } }
         #projects .projects .all-projects .project-item .project-img img {
           transition: .5s ease width; }
         #projects .projects .all-projects .project-item .project-img::after {
@@ -320,6 +426,9 @@ p {
     text-align: center; }
     #projects .projects .section-title span {
       color: crimson; }
+    @media (min-width: 768px) {
+      #projects .projects .section-title {
+        font-size: 6rem; } }
 
 /* end projects */
 
@@ -329,6 +438,9 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px; }
+  @media (min-width: 768px) {
+    #about .about {
+      flex-direction: row; } }
   #about .about .col-left {
     width: 250px;
     height: 360px; }
@@ -346,8 +458,19 @@ p {
         width: 98%;
         border: 7px solid crimson;
         z-index: -1; }
+        @media (min-width: 768px) {
+          #about .about .col-left .about-img::after {
+            left: -45px;
+            top: 30px;
+            height: 98%;
+            width: 98%;
+            border: 8px solid crimson; } }
   #about .about .col-right {
     width: 100%; }
+    @media (min-width: 768px) {
+      #about .about .col-right {
+        text-align: left;
+        padding: 30px; } }
     #about .about .col-right .section-title {
       font-size: 4rem;
       font-weight: 300;
@@ -358,6 +481,12 @@ p {
       text-align: center; }
       #about .about .col-right .section-title span {
         color: crimson; }
+      @media (min-width: 768px) {
+        #about .about .col-right .section-title {
+          font-size: 6rem; } }
+    @media (min-width: 768px) {
+      #about .about .col-right h1 {
+        text-align: left; } }
     #about .about .col-right h2 {
       font-size: 1.8rem;
       font-weight: 500;
@@ -389,6 +518,13 @@ p {
   flex-direction: column;
   max-width: 1200px;
   margin: 50px auto; }
+  @media (min-width: 768px) {
+    #contact .contact {
+      flex-direction: column;
+      padding: 50px 0;
+      align-items: center;
+      justify-content: center;
+      min-width: 20vh; } }
   #contact .contact .section-title {
     font-size: 4rem;
     font-weight: 300;
@@ -399,27 +535,51 @@ p {
     text-align: center; }
     #contact .contact .section-title span {
       color: crimson; }
+    @media (min-width: 768px) {
+      #contact .contact .section-title {
+        font-size: 6rem; } }
   #contact .contact .contact-items {
     width: 400px; }
+    @media (min-width: 768px) {
+      #contact .contact .contact-items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        margin: 0; } }
     #contact .contact .contact-items .contact-item {
       width: 80%;
       padding: 20px;
       text-align: center;
       border-radius: 10px;
       padding: 30px;
-      margin: 30px;
+      margin: 30px auto;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       box-shadow: 0 0 18px 0 #0000002c;
       transition: .3s ease box-shadow; }
+      @media (min-width: 768px) {
+        #contact .contact .contact-items .contact-item {
+          margin: 20px;
+          flex-direction: row; } }
       #contact .contact .contact-items .contact-item:hover {
         box-shadow: 0 0 5px 0 #0000002c; }
       #contact .contact .contact-items .contact-item .icon {
         width: 70px;
         margin: 0 auto;
         margin-bottom: 10px; }
+        @media (min-width: 768px) {
+          #contact .contact .contact-items .contact-item .icon {
+            height: 100px;
+            width: 80px; } }
+        #contact .contact .contact-items .contact-item .icon img {
+          object-fit: contain; }
+      @media (min-width: 768px) {
+        #contact .contact .contact-items .contact-item .contact-info {
+          width: 100%;
+          text-align: center; } }
       #contact .contact .contact-items .contact-item .contact-info h1 {
         font-size: 2.5rem;
         font-weight: 500;
@@ -446,6 +606,9 @@ p {
       text-align: center; }
       #footer .footer .brand span {
         color: crimson; }
+      @media (min-width: 768px) {
+        #footer .footer .brand {
+          font-size: 6rem; } }
       #footer .footer .brand h1 {
         font-size: 3rem;
         text-transform: uppercase;

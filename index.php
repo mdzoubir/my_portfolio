@@ -1,5 +1,11 @@
-<?php include('includes/header.php'); ?>
-<!-- hero section -->
+<?php 
+
+include('includes/header.php'); 
+// navbar section 
+include('includes/navbar.php');
+// end hero section 
+?>
+
         <section id="hero">
             <div class="hero container">
                 <div>

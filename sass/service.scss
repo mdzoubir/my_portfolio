@@ -1,5 +1,4 @@
 /*  service section   */
-
 @import "./mixin";
 img{
     height: 100%;
@@ -26,6 +25,10 @@ p{
             .section-title{
                 @include section-title;
             }
+            @include resp(768px) {
+                width: 500px;
+                margin: 0 auto;
+            }
         }
         .service-bottom{
             display: flex;
@@ -33,6 +36,7 @@ p{
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 50px;
+            
             .service-item{
                 flex-basis: 80%;
                 display: flex;
@@ -47,6 +51,14 @@ p{
                 position: relative;
                 z-index: 1;
                 overflow: hidden;
+                @include resp(768px){
+                    flex-basis: 45%;
+                    margin: 2.5%;
+                }
+                @include resp(1200px) {
+                    flex-basis:22%;
+                    margin:1.5%;
+                }
                 &::after{
                     content: '';
                     position: absolute;
@@ -55,7 +67,7 @@ p{
                     height: 100%;
                     width: 100%;
                     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-                    opacity: .8;
+                    opacity: .9;
                     z-index: -1;
                 }
                 .icon{
@@ -73,6 +85,7 @@ p{
                     color: white;
                     text-align: left;
                 }
+                
                 
             }
         }

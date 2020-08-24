@@ -47,6 +47,9 @@ a {
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: 1s; }
+    @media (min-width: 768px) {
+      #hero h1 {
+        font-size: 6rem; } }
     #hero h1:nth-child(1) {
       animation-delay: 1s; }
       #hero h1:nth-child(1) span {
@@ -83,6 +86,10 @@ a {
     #hero .cta:hover {
       color: white;
       background-color: crimson; }
+    @media (min-width: 768px) {
+      #hero .cta {
+        font-size: 2.5rem;
+        padding: 20px 60px; } }
 
 /*  end hero section    */
 /* keyframes */
