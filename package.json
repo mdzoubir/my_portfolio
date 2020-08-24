@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile-sass": "node-sass -w sass -o css",
-    "concat": "concat -o css/style.css css/navbar.css css/hero.css css/service.css css/service.css css/projects.css"
+    "concat": "concat -o css/style.css css/navbar.css css/hero.css css/service.css css/service.css css/projects.css css/aboutme.css css/contact.css css/footer.css"
   },
   "repository": {
     "type": "git",

@@ -21,8 +21,16 @@ include('includes/service.php');
 include('includes/projects.php');
 // end projects service 
 
+// about me section
+include('includes/aboutMe.php');
+// end about me section
+
+// contact section
+include('includes/contact.php');
+// end contact section
+
 // footer 
- include('includes/footer.php'); 
+include('includes/footer.php'); 
 //end footer
 ?>
 
@@ -33,5 +41,4 @@ include('includes/projects.php');
 
 
 
-<?php include('includes/footer.php'); ?>
     
