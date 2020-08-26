@@ -40,14 +40,16 @@
           padding: 20px;
           display: block; }
           #header .header .nav-bar ul a::after {
-            content: 'TEXT';
+            content: attr(data-after);
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(0);
             color: rgba(240, 248, 255, 0.021);
-            font-size: 15rem;
+            font-size: 13rem;
             letter-spacing: 50px;
-            z-index: -1; }
+            z-index: -1;
+            transition: .3s ease letter-spacing; }
         #header .header .nav-bar ul li:hover a::after {
-          transform: translate(-50%, -50%) scale(1); }
+          transform: translate(-50%, -50%) scale(1);
+          letter-spacing: initial; }
