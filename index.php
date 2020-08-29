@@ -12,7 +12,7 @@ include('includes/navbar.php');
                     <h1>Hello, <span></span></h1>
                     <h1>My Name is <span></span></h1>
                     <h1>Mohamed <span></span></h1>
-                    <a href="#" type="button" class="cta">Portfolio</a>
+                    <a href="#projects" type="button" class="cta">Portfolio</a>
                 </div>
             </div>
         </section>
@@ -39,7 +39,6 @@ include('includes/contact.php');
 include('includes/footer.php'); 
 //end footer
 ?>
-
 
 
 

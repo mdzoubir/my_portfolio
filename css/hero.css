@@ -5,7 +5,8 @@
 
 html {
   font-size: 10px;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth; }
 
 .container {
   min-height: 100vh;
