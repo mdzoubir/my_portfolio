@@ -16,6 +16,9 @@
     }
     .contact-items{
         width: 400px;
+        @include respmax(400px){
+            width: 250px;
+        }
         @include resp(768px){
             width: 100%;
             display: flex;
@@ -25,7 +28,7 @@
             padding: 50px;
         }
         .contact-item{
-            width: 30%;
+            width: 80%;
             text-align: center;
             border-radius: 10px;
             padding: 30px;
@@ -36,7 +39,7 @@
             flex-direction: column;
             box-shadow: 0 0 18px 0 #0000002c;
             transition: .3s ease box-shadow;
-            @include resp(768px){
+            @include resp(860px){
                 margin: 20px;
                 flex-direction: row;
             }

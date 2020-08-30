@@ -31,9 +31,12 @@
         @media (min-width: 768px) {
           #header .header .nav-bar .brand {
             font-size: 6rem; } }
-        @media (min-width: 1200px) {
+        @media (min-width: 768px) {
           #header .header .nav-bar .brand {
-            font-size: 1rem; } }
+            font-size: 2rem; } }
+        @media (min-width: 100px) {
+          #header .header .nav-bar .brand {
+            margin-top: 5px; } }
         #header .header .nav-bar .brand a {
           color: white; }
       #header .header .nav-bar .nav-list .hamburger {
@@ -548,13 +551,15 @@ p {
       position: relative;
       z-index: 1; }
       #about .about .col-left .about-img img {
-        border: 10px solid white; }
+        border: 12px solid white;
+        margin-left: 30px; }
       #about .about .col-left .about-img::after {
         content: '';
         position: absolute;
+        margin-left: 30px;
         left: -33px;
-        top: 35px;
-        height: 93%;
+        top: 30px;
+        height: 96%;
         width: 98%;
         border: 7px solid crimson;
         z-index: -1; }
@@ -640,6 +645,9 @@ p {
         font-size: 6rem; } }
   #contact .contact .contact-items {
     width: 400px; }
+    @media (max-width: 400px) {
+      #contact .contact .contact-items {
+        width: 250px; } }
     @media (min-width: 768px) {
       #contact .contact .contact-items {
         width: 100%;
@@ -649,7 +657,7 @@ p {
         margin: 0;
         padding: 50px; } }
     #contact .contact .contact-items .contact-item {
-      width: 30%;
+      width: 80%;
       text-align: center;
       border-radius: 10px;
       padding: 30px;
@@ -660,7 +668,7 @@ p {
       flex-direction: column;
       box-shadow: 0 0 18px 0 #0000002c;
       transition: .3s ease box-shadow; }
-      @media (min-width: 768px) {
+      @media (min-width: 860px) {
         #contact .contact .contact-items .contact-item {
           margin: 20px;
           flex-direction: row; } }

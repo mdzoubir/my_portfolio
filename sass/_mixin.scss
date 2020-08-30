@@ -39,4 +39,8 @@
     }
 }
 
-
+@mixin  respmax($size) {
+    @media (max-width: #{$size}) {
+        @content;
+    }
+}

@@ -21,8 +21,12 @@
             .brand{
                 @include section-title;
                 font-size: 1.6rem;
-                @include resp(1200px){
-                    font-size: 1rem;
+                @include resp(768px){
+                    font-size: 2rem;
+                }
+                @include resp(100px){
+                    margin-top: 5px;
+
                 }
                 a{
                     color: white;

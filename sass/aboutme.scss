@@ -16,14 +16,16 @@
             position: relative;
             z-index: 1;
             img{
-                border: 10px solid white;
+                border: 12px solid white;
+                margin-left: 30px;
             }
             &::after{
                 content: '';
                 position: absolute;
+                margin-left: 30px;
                 left: -33px;
-                top: 35px;
-                height: 93%;
+                top: 30px;
+                height: 96%;
                 width: 98%;
                 border: 7px solid crimson;
                 z-index: -1;

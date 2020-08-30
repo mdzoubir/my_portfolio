@@ -24,6 +24,9 @@
         font-size: 6rem; } }
   #contact .contact .contact-items {
     width: 400px; }
+    @media (max-width: 400px) {
+      #contact .contact .contact-items {
+        width: 250px; } }
     @media (min-width: 768px) {
       #contact .contact .contact-items {
         width: 100%;
@@ -33,7 +36,7 @@
         margin: 0;
         padding: 50px; } }
     #contact .contact .contact-items .contact-item {
-      width: 30%;
+      width: 80%;
       text-align: center;
       border-radius: 10px;
       padding: 30px;
@@ -44,7 +47,7 @@
       flex-direction: column;
       box-shadow: 0 0 18px 0 #0000002c;
       transition: .3s ease box-shadow; }
-      @media (min-width: 768px) {
+      @media (min-width: 860px) {
         #contact .contact .contact-items .contact-item {
           margin: 20px;
           flex-direction: row; } }
