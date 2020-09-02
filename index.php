@@ -1,8 +1,8 @@
 <?php 
 
-include('includes/header.php'); 
+include('includes/users/header.php'); 
 // navbar section 
-include('includes/navbar.php');
+include('includes/users/navbar.php');
 // end hero section 
 ?>
 
@@ -20,23 +20,23 @@ include('includes/navbar.php');
 <!-- End Hero section -->
 <?php   
 // service section
-include('includes/service.php');
+include('includes/users/service.php');
 // end service section
 
 // projects service 
-include('includes/projects.php');
+include('includes/users/projects.php');
 // end projects service 
 
 // about me section
-include('includes/aboutMe.php');
+include('includes/users/aboutMe.php');
 // end about me section
 
 // contact section
-include('includes/contact.php');
+include('includes/users/contact.php');
 // end contact section
 
 // footer 
-include('includes/footer.php'); 
+include('includes/users/footer.php'); 
 //end footer
 ?>
 
