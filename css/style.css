@@ -772,6 +772,11 @@ p {
       border: none;
       padding: 10px;
       border-radius: 8px;
-      cursor: pointer; }
+      cursor: pointer;
+      opacity: .7; }
+      #login .conn .login input:hover {
+        opacity: 1; }
+    #login .conn .msge {
+      color: crimson; }
 
 /* end login section */
