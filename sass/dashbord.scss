@@ -24,6 +24,10 @@
                 }
                 input{
                     height: 40px;
+                    padding: 4px;
+                }
+                textarea{
+                    padding: 4px;
                 }
                 input[type="submit"]{
                     margin: 20px 0;
@@ -34,6 +38,7 @@
                     font-weight: bold;
                     letter-spacing: .2rem;
                     border-radius: 8px;
+                    cursor: pointer;
                 }
             }
         }

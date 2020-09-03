@@ -1,65 +1,38 @@
+<?php
+include('includes/admin/db.php');
+?>
 <section id="projects">
     <div class="projects container">
         <div class="projects-header">
             <h1 class="section-title">Recent <span>Projects</span></h1>
         </div>
+        
         <div class="all-projects">
+        <?php
+                $result=$conn->query('SELECT * FROM projects');
+                while($data=$result->fetch_assoc())
+            {?>
             <div class="project-item">
+            
                 <div class="project-info">
                     <h1>Project 1</h1>
-                    <h2>Coding is Love</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste hic commodi aperiam non expedita deleniti, voluptas voluptates quas similique vero, assumenda corporis et, iure ipsa! Rerum est expedita laudantium!
-                    </p>
-                    <p>DATE DE DEBUT:</p>
-                    <p>DATE DE FUN:</p>
+                    <h2>Titre : <?php echo $data['titre']?></h2>
+                    <p><?php echo $data['description']?></p>
+                    <p>DATE DE DEBUT: <?php echo $data['date_debut']?></p>
+                    <p>DATE DE FUN: <?php echo $data['date_fin']?></p>
                 </div>
                 <div class="project-img">
                     <img src="img/img-1.png" alt="img">
                 </div>
+                
             </div>
-            <div class="project-item">
-                <div class="project-info">
-                    <h1>Project 2</h1>
-                    <h2>Coding is Love</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste hic commodi aperiam non expedita deleniti, voluptas voluptates quas similique vero, assumenda corporis et, iure ipsa! Rerum est expedita laudantium!
-                    </p>
-                    <p>DATE DE DEBUT:</p>
-                    <p>DATE DE FUN:</p>
-                </div>
-                <div class="project-img">
-                    <img src="img/img-1.png" alt="img">
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-info">
-                    <h1>Project 3</h1>
-                    <h2>Coding is Love</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste hic commodi aperiam non expedita deleniti, voluptas voluptates quas similique vero, assumenda corporis et, iure ipsa! Rerum est expedita laudantium!
-                    </p>
-                    <p>DATE DE DEBUT:</p>
-                    <p>DATE DE FUN:</p>
-                </div>
-                <div class="project-img">
-                    <img src="img/img-1.png" alt="img">
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-info">
-                    <h1>Project 4</h1>
-                    <h2>Coding is Love</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste hic commodi aperiam non expedita deleniti, voluptas voluptates quas similique vero, assumenda corporis et, iure ipsa! Rerum est expedita laudantium!
-                    </p>
-                    <p>DATE DE DEBUT:</p>
-                    <p>DATE DE FUN:</p>
-                </div>
-                <div class="project-img">
-                    <img src="img/img-1.png" alt="img">
-                </div>
-            </div>
+            
+            <?php
+            }
+            $result->close();
+            ?>
+            
         </div>
+        
     </div>
 </section>
