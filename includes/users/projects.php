@@ -11,6 +11,8 @@
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste hic commodi aperiam non expedita deleniti, voluptas voluptates quas similique vero, assumenda corporis et, iure ipsa! Rerum est expedita laudantium!
                     </p>
+                    <p>DATE DE DEBUT:</p>
+                    <p>DATE DE FUN:</p>
                 </div>
                 <div class="project-img">
                     <img src="img/img-1.png" alt="img">
@@ -23,6 +25,8 @@
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste hic commodi aperiam non expedita deleniti, voluptas voluptates quas similique vero, assumenda corporis et, iure ipsa! Rerum est expedita laudantium!
                     </p>
+                    <p>DATE DE DEBUT:</p>
+                    <p>DATE DE FUN:</p>
                 </div>
                 <div class="project-img">
                     <img src="img/img-1.png" alt="img">
@@ -35,6 +39,8 @@
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste hic commodi aperiam non expedita deleniti, voluptas voluptates quas similique vero, assumenda corporis et, iure ipsa! Rerum est expedita laudantium!
                     </p>
+                    <p>DATE DE DEBUT:</p>
+                    <p>DATE DE FUN:</p>
                 </div>
                 <div class="project-img">
                     <img src="img/img-1.png" alt="img">
@@ -47,6 +53,8 @@
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste hic commodi aperiam non expedita deleniti, voluptas voluptates quas similique vero, assumenda corporis et, iure ipsa! Rerum est expedita laudantium!
                     </p>
+                    <p>DATE DE DEBUT:</p>
+                    <p>DATE DE FUN:</p>
                 </div>
                 <div class="project-img">
                     <img src="img/img-1.png" alt="img">

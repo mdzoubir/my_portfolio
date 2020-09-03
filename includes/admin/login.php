@@ -10,7 +10,7 @@ if (isset($_POST['login'])) {
     if($pass == $passV){
         if(mysqli_num_rows($result)>0){
             $_SESSION["admin"]=$user;
-            header("location:index.php");
+            header("location:dashbord.php");
             
             }
         else{

@@ -1,9 +1,8 @@
 <?php 
-include('includes/admin/header.php'); 
+include('includes/users/header.php'); 
 
 
-
-include('includes/admin/navbar.php');
+include('includes/users/navbar.php');
 
 
 include('includes/admin/login.php');

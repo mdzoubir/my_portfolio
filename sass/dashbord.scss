@@ -1,0 +1,42 @@
+// dashbord section
+#dashbord{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    .dashbord{
+        form{
+            width: 50%;
+            min-width: 300px;
+            h1{
+                color: white;
+                text-align: center;
+                font-size: 4rem;
+            }
+            div{
+                margin: 10px auto;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                min-width: 100%;
+                label{
+                    font-size: 2rem;
+                    text-align: start;
+                    color: white;
+                }
+                input{
+                    height: 40px;
+                }
+                input[type="submit"]{
+                    margin: 20px 0;
+                    width: 80px;
+                    background-color: #0082c8;
+                    border: none;
+                    color: white;
+                    font-weight: bold;
+                    letter-spacing: .2rem;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+// end dashbord section

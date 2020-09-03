@@ -8,7 +8,8 @@
         <div class="col-right">
             <h1 class="section-title">ABOUT <span>ME</span></h1>
             <h2>front end web devloper</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, voluptatibus delectus? Molestias, eos cupiditate. Quasi sapiente placeat iure atque minus, mollitia ratione libero numquam cum natus odit hic rem ipsam.Quas ea consequatur voluptatem asperiores et praesentium quidem, amet illum eius aspernatur error, distinctio odit incidunt similique ducimus fuga commodi, voluptate quia beatae? Beatae, obcaecati error magni repudiandae cum at!</p>
+            <p>Marocain 18 ans de Beni Mellal</p>
+            <p> Apprenant en première année Développement web à la recherche d’un stage pour consolider mes connaissances et mon savoir-faire tout en m’imprégnant du contexte du monde professionnel et de ses contraintes en termes de délais.</p>
             <a href="#">Download Resume</a>
         </div>
     </div>
