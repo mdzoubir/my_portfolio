@@ -12,9 +12,10 @@
         <div class="nav-list">
           <div class="hamburger"><div class="bar"></div></div>
           <ul>
+            
+            <li><a href="#" data-after="C.Projects">V.Projects</a></li>
             <li><a href="#" data-after="C.Projects">C.Projects</a></li>
-            <li><a href="#" data-after="E.Projects">E.Projects</a></li>
-            <li><a href="#" data-after="D.Projects">D.Projects</a></li>
+            <li><a href="#" data-after="E.D.Projects">E.D.Projects</a></li>
             <li><a href="includes/admin/signout.php" data-after="sign out">sign out</a></li>
           </ul>
         </div>

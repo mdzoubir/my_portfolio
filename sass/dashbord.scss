@@ -1,7 +1,7 @@
 // dashbord section
-#dashbord{
+#cp{
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    .dashbord{
+    .cp{
         form{
             width: 50%;
             min-width: 300px;
@@ -9,6 +9,10 @@
                 color: white;
                 text-align: center;
                 font-size: 4rem;
+            }
+            h2{
+                color: crimson;
+                font-weight: 300;
             }
             div{
                 margin: 10px auto;
@@ -44,4 +48,44 @@
         }
     }
 }
-// end dashbord section
+// end C P section
+
+
+// start V E post
+
+#vp{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+    .vp{
+        table {
+            border-collapse: collapse;
+            width: 75%;
+            th {
+                font-size: 2rem;
+                text-align: center;
+                padding: 8px;
+            }
+            td{
+                font-size: 1.5rem;
+                text-align: left;
+                padding: 10px ;
+                i{
+                    color: blue;
+                    width: 100%;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+
+            tr:nth-child(even){background-color: #f2f2f2}
+              
+            th {
+                background-color: black;
+                color: white;
+                
+            }
+        }
+          
+          
+    }
+}

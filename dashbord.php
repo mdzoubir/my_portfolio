@@ -19,6 +19,8 @@ if (isset($_POST['ajouter'])) {
         $date_f = $_POST['date_f'];
         $sql = "INSERT INTO projects (titre, description, date_debut, date_fin, date_pub) VALUE ('$titre', '$desc', '$date_d', '$date_f', NOW())";
         mysqli_query($conn, $sql);
+    }else{
+        $message = "cree tout les chouse";
     }
 }
 
@@ -29,8 +31,9 @@ if (isset($_POST['ajouter'])) {
 include('includes/users/header.php'); 
 include('includes/admin/navbar.php');
 ?>
-<section id="dashbord">
-    <div class="dashbord container">
+<!-- ajouter projects -->
+<section id="cp">
+    <div class="cp container">
         <form action="" method="POST">
             <h1>Creet Project</h1>
             <div>
@@ -49,13 +52,51 @@ include('includes/admin/navbar.php');
                 <label for="">Date de fin</label>
                 <input type="date" name="date_f">
             </div>
+            <h2><?php if (isset($message)) {
+                echo $message;
+            }?></h2>
             <div>
                 <input type="submit" value="POST" name="ajouter">
             </div>
+            
         </form>
     </div>
 </section>
-
+<!-- end  -->
+<section id="vp">
+    <div class="vp container">
+             
+        <table>
+        <tr>
+            <th>id</th>
+            <th>Titre</th>
+            <th>Description</th>
+            <th>Date de debut</th>
+            <th>Date de fin</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <?php
+                $result=$conn->query('SELECT * FROM projects');
+                while($data=$result->fetch_assoc())
+            {?>
+        <tr>
+            <td></td>
+            <td><?php echo $data['titre']?></td>
+            <td><?php echo $data['description']?></td>
+            <td><?php echo $data['date_debut']?></td>
+            <td><?php echo $data['date_fin']?></td>
+            <td><i class="far fa-edit"></i></td>
+            <td><i class="far fa-trash-alt"></i></td>
+        </tr>
+        <?php
+        }
+        $result->close();
+        ?>
+        </table>
+        
+    </div>
+</section>
 
 
 <?php include('includes/admin/footer.php'); ?>

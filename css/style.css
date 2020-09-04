@@ -783,32 +783,35 @@ p {
 
 /* end login section */
 
-#dashbord {
+#cp {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); }
-  #dashbord .dashbord form {
+  #cp .cp form {
     width: 50%;
     min-width: 300px; }
-    #dashbord .dashbord form h1 {
+    #cp .cp form h1 {
       color: white;
       text-align: center;
       font-size: 4rem; }
-    #dashbord .dashbord form div {
+    #cp .cp form h2 {
+      color: crimson;
+      font-weight: 300; }
+    #cp .cp form div {
       margin: 10px auto;
       text-align: center;
       display: flex;
       flex-direction: column;
       width: 70%;
       min-width: 100%; }
-      #dashbord .dashbord form div label {
+      #cp .cp form div label {
         font-size: 2rem;
         text-align: start;
         color: white; }
-      #dashbord .dashbord form div input {
+      #cp .cp form div input {
         height: 40px;
         padding: 4px; }
-      #dashbord .dashbord form div textarea {
+      #cp .cp form div textarea {
         padding: 4px; }
-      #dashbord .dashbord form div input[type="submit"] {
+      #cp .cp form div input[type="submit"] {
         margin: 20px 0;
         width: 80px;
         background-color: #0082c8;
@@ -818,3 +821,27 @@ p {
         letter-spacing: .2rem;
         border-radius: 8px;
         cursor: pointer; }
+
+#vp {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); }
+  #vp .vp table {
+    border-collapse: collapse;
+    width: 75%; }
+    #vp .vp table th {
+      font-size: 2rem;
+      text-align: center;
+      padding: 8px; }
+    #vp .vp table td {
+      font-size: 1.5rem;
+      text-align: left;
+      padding: 10px; }
+      #vp .vp table td i {
+        color: blue;
+        width: 100%;
+        text-align: center;
+        cursor: pointer; }
+    #vp .vp table tr:nth-child(even) {
+      background-color: #f2f2f2; }
+    #vp .vp table th {
+      background-color: black;
+      color: white; }
