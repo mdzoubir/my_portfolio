@@ -52,12 +52,15 @@
       text-align: left;
       padding: 10px; }
       #vp .vp table td i {
-        color: blue;
+        color: #a1a1f5;
         width: 100%;
         text-align: center;
         cursor: pointer; }
     #vp .vp table tr:nth-child(even) {
       background-color: #f2f2f2; }
+    #vp .vp table tr:nth-child(odd) {
+      background-color: #485563;
+      color: white; }
     #vp .vp table th {
       background-color: black;
       color: white; }

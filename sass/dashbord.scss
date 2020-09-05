@@ -71,15 +71,15 @@
                 text-align: left;
                 padding: 10px ;
                 i{
-                    color: blue;
+                    color: rgb(161, 161, 245);
                     width: 100%;
                     text-align: center;
                     cursor: pointer;
+                    
                 }
             }
-
             tr:nth-child(even){background-color: #f2f2f2}
-              
+            tr:nth-child(odd){background-color: #485563; color: white;} 
             th {
                 background-color: black;
                 color: white;
