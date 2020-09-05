@@ -81,13 +81,13 @@ include('includes/admin/navbar.php');
                 while($data=$result->fetch_assoc())
             {?>
         <tr>
-            <td></td>
+            <td><?php echo $data['id']?></td>
             <td><?php echo $data['titre']?></td>
             <td><?php echo $data['description']?></td>
             <td><?php echo $data['date_debut']?></td>
             <td><?php echo $data['date_fin']?></td>
-            <td><i class="far fa-edit"></i></td>
-            <td><i class="far fa-trash-alt"></i></td>
+            <td><a href="modifier.php?numPost=<?php echo $data['id']?>"><i class="far fa-edit"></i></a></td>
+            <td><a href="supprimer.php?numPost=<?php echo $data['id']?>"><i class="far fa-trash-alt"></i></a></td>
         </tr>
         <?php
         }

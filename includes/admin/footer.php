@@ -45,8 +45,19 @@ menu_item.forEach((item) => {
 	});
 });
 
+const cp = document.getElementById('cp');
+const vp = document.getElementById('vp');
+const creet = document.querySelector('#header .header .nav-bar .nav-list ul .cp');
+const supr= document.querySelector('#header .header .nav-bar .nav-list ul .dp');
 
-
+creet.addEventListener('click', ()=>{
+  vp.style.display = "none";
+  cp.style.display = "block";
+})
+supr.addEventListener('click', ()=>{
+  vp.style.display = "block";
+  cp.style.display = "none";
+})
 </script>
 </body>
 </html>
