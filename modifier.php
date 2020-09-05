@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if (isset($_SESSION['admin'])) {
+
+
+
+?>
 <?php 
 // include('conn.php');
 $bdb=new PDO('mysql:host=localhost;dbname=portfolio', 'root','root');
@@ -48,3 +56,10 @@ include('includes/admin/navbar.php');
     </div>
 </section>
 <?php include('includes/admin/footer.php'); ?>
+<?php 
+}  else{
+    header("location:login.php");
+}
+
+
+?>
