@@ -14,7 +14,7 @@
           <ul>
             <li><a href="#" data-after="C.Projects" class="cp">C.Projects</a></li>
             <li><a href="#" data-after="E.D.Projects" class="dp">E.D.Projects</a></li>
-            <li><a href="includes/admin/signout.php" data-after="sign out">sign out</a></li>
+            <li><a href="includes/admin/signOut.php?logout" data-after="sign out">sign out</a></li>
           </ul>
         </div>
       </div>

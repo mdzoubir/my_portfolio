@@ -2,7 +2,7 @@
 session_start();
 if (isset($_GET['logout'])) {
     session_destroy();
-    header("location:../index.php");
+    header("location:/my_portfolio/login.php");
 }else{
     echo 'erreur';
 }
