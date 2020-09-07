@@ -1,9 +1,11 @@
 <?php
+
 if (isset($_POST['Send'])) {
     if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['subject']) || empty($_POST['message'])) {
         $empty = "entre tout les chose";
     }else{
-        if (filter_var($_POST['email'] , FILTER_VALIDATE_EMAIL)) {
+        
+        // if (filter_var($_POST['email'] , FILTER_VALIDATE_EMAIL)) {
             $name = $_POST['name'];
             $email = $_POST['email'];
             $subject = $_POST['subject'];
@@ -15,8 +17,10 @@ if (isset($_POST['Send'])) {
             $body .= "From ".$email. "\r\n";
             $body .= "From ".$message. "\r\n";
             mail($to, $subject, $body);
-            
-        }
+        // }
+        include('../my_portfolio/includes/admin/db.php');
+        $sql = "INSERT INTO contact (user_name, user_email, subject, message, date_pub) VALUE ('$name', '$email', '$subject', '$message', NOW())";
+        mysqli_query($conn, $sql);
     }
 }
 ?>
