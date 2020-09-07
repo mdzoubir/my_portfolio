@@ -2,7 +2,7 @@
     <div class="services container"> 
         <div class="service-top">
             <h1 class="section-title">Serv<span>i</span>ces</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis possimus excepturi sequi eos repellat omnis esse neque voluptatem? Eum temporibus voluptates deleniti? Ab dolor aut unde sed! Ipsam, ullam odit!</p>
+            <p>NOTRE EXPERTISE A VOTRE SERVICES <br>les services ci-dessus que nous présentons : </p>
         </div>
         <div class="service-bottom">
             <div class="service-item"> 

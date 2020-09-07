@@ -15,7 +15,7 @@ include('includes/admin/db.php');
             <div class="project-item">
             
                 <div class="project-info">
-                    <h1>Project 1</h1>
+                    <h1>Project <?php echo $data['id'];?></h1>
                     <h2>Titre : <?php echo $data['titre']?></h2>
                     <p><?php echo $data['description']?></p>
                     <p>DATE DE DEBUT: <?php echo $data['date_debut']?></p>
