@@ -10,7 +10,7 @@
             <h2>front end web devloper</h2>
             <p>Marocain 18 ans de Beni Mellal</p>
             <p> Apprenant en première année Développement web à la recherche d’un stage pour consolider mes connaissances et mon savoir-faire tout en m’imprégnant du contexte du monde professionnel et de ses contraintes en termes de délais.</p>
-            <a href="#">Download Resume</a>
+            <a href="assets/cv.pdf">Download Resume</a>
         </div>
     </div>
 </section>
