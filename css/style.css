@@ -176,7 +176,7 @@ a {
 
 /*  hero section    */
 #hero {
-  background-image: url(../img/hero-bg.png);
+  background-image: url(../img/img.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -547,7 +547,7 @@ p {
     #about .about {
       flex-direction: row; } }
   #about .about .col-left {
-    width: 250px;
+    width: 350px;
     height: 360px; }
     #about .about .col-left .about-img {
       position: relative;

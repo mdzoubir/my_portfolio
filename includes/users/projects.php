@@ -9,13 +9,14 @@ include('includes/admin/db.php');
         
         <div class="all-projects">
         <?php
+                $x =1;
                 $result=$conn->query('SELECT * FROM projects');
                 while($data=$result->fetch_assoc())
             {?>
             <div class="project-item">
             
                 <div class="project-info">
-                    <h1>Project <?php echo $data['id'];?></h1>
+                    <h1>Project <?php echo $x;?></h1>
                     <h2>Titre : <?php echo $data['titre']?></h2>
                     <p><?php echo $data['description']?></p>
                     <p>DATE DE DEBUT: <?php echo $data['date_debut']?></p>
@@ -28,6 +29,7 @@ include('includes/admin/db.php');
             </div>
             
             <?php
+            $x++;
             }
             $result->close();
             ?>
