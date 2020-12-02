@@ -1,7 +1,14 @@
 <?php 
 
-// include('conn.php');
 $bdb=new PDO('mysql:host=localhost;dbname=portfolio', 'root','root');
+
+
+
+
+
+
+
+
 
 // preparation de la requéte
 $podStat = $bdb->prepare('DELETE FROM projects WHERE id=:num LIMIT 1');

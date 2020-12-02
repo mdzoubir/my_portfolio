@@ -16,6 +16,9 @@
       #about .about .col-left .about-img img {
         border: 12px solid white;
         margin-left: 30px; }
+        @media (max-width: 500px) {
+          #about .about .col-left .about-img img {
+            margin-left: 10px; } }
       #about .about .col-left .about-img::after {
         content: '';
         position: absolute;

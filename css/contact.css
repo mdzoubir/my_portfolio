@@ -9,6 +9,9 @@
       align-items: center;
       justify-content: center;
       min-width: 20vh; } }
+  @media (max-width: 768px) {
+    #contact .contact {
+      margin: 200px auto; } }
   #contact .contact .section-title {
     font-size: 4rem;
     font-weight: 300;

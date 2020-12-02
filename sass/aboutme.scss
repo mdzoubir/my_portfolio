@@ -18,6 +18,9 @@
             img{
                 border: 12px solid white;
                 margin-left: 30px;
+                @include respmax(500px){
+                    margin-left: 10px;
+                }
             }
             &::after{
                 content: '';

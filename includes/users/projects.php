@@ -11,7 +11,7 @@ include('includes/admin/db.php');
         <?php
                 $x =1;
                 $result=$conn->query('SELECT * FROM projects');
-                while($data=$result->fetch_assoc())
+                while($data=$result->fetch_assoc()) //recupere en ligne de resultat so forme de table assosiatif
             {?>
             <div class="project-item">
             
@@ -29,9 +29,9 @@ include('includes/admin/db.php');
             </div>
             
             <?php
-            $x++;
-            }
-            $result->close();
+                $x++;
+                }
+                $result->close();
             ?>
             
         </div>

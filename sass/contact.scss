@@ -10,6 +10,10 @@
         align-items: center;
         justify-content: center;
         min-width: 20vh;
+
+    }
+    @include respmax(768px){
+        margin: 200px auto;
     }
     .section-title{
         @include section-title;

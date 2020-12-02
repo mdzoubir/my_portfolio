@@ -2,9 +2,6 @@
 session_start();
 
 if (isset($_SESSION['admin'])) {
-
-
-
 ?>
 
 <?php 
@@ -23,11 +20,6 @@ if (isset($_POST['ajouter'])) {
         $message = "cree tout les chouse";
     }
 }
-
-
-
-
-
 include('includes/users/header.php'); 
 include('includes/admin/navbar.php');
 ?>

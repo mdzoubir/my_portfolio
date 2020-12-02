@@ -1,17 +1,16 @@
 <?php
-session_start();
+session_start();  //stocker les info a utilise sur plusieurs pages
 include('db.php');
 if (isset($_POST['login'])) {
     $user = htmlspecialchars(trim($_POST['user'])); //htmlspecialchars : pour les tags   /trim: Supprime les espaces (ou d'autres caractères) en début et fin de chaîne
     $pass = $_POST['pass'];
     $passV = $_POST['passVerify'];
     $requit = "SELECT * FROM admin WHERE Username='$user' AND password='$pass'"; //verefication de user and pass
-    $result = mysqli_query($conn, $requit);
+    $result = mysqli_query($conn, $requit); //executer une requete
     if($pass == $passV){
-        if(mysqli_num_rows($result)>0){
+        if(mysqli_num_rows($result)>0){ //reteurne le nombre de ligne dans un resultat
             $_SESSION["admin"]=$user;
             header("location:dashbord.php");
-            
             }
         else{
             $message_error = 'your usename or password is incorrect';

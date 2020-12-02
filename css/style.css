@@ -555,6 +555,9 @@ p {
       #about .about .col-left .about-img img {
         border: 12px solid white;
         margin-left: 30px; }
+        @media (max-width: 500px) {
+          #about .about .col-left .about-img img {
+            margin-left: 10px; } }
       #about .about .col-left .about-img::after {
         content: '';
         position: absolute;
@@ -632,6 +635,9 @@ p {
       align-items: center;
       justify-content: center;
       min-width: 20vh; } }
+  @media (max-width: 768px) {
+    #contact .contact {
+      margin: 200px auto; } }
   #contact .contact .section-title {
     font-size: 4rem;
     font-weight: 300;
